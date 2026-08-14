@@ -65,11 +65,13 @@ a { color: inherit; }
 .prof-panel { background: linear-gradient(135deg, #FF7A3D, #FF2E93); border-radius: 14px; padding: 36px 32px; color: #fff; scroll-margin-top: 80px; }
 .prof-panel + .prof-panel { margin-top: 20px; }
 .prof-layout { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
-.prof-avatar {
-  width: 96px; height: 96px; border-radius: 50%; background: rgba(0,0,0,0.25); border: 2px solid rgba(255,255,255,0.5);
-  display: flex; align-items: center; justify-content: center; font-size: 34px; font-weight: 800; flex-shrink: 0;
+.prof-photo {
+  width: 200px; height: 240px; object-fit: cover; object-position: top center;
+  border-radius: 14px; flex-shrink: 0; order: 2;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25); background: rgba(0,0,0,0.15);
 }
-.prof-info { flex: 1; min-width: 240px; }
+.prof-info { flex: 1; min-width: 240px; order: 1; }
+@media (max-width: 680px) { .prof-photo { width: 100%; max-width: 260px; order: -1; } }
 .prof-name-line { font-size: 19px; font-weight: 800; line-height: 1.5; margin-bottom: 10px; }
 .prof-points { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
 .prof-points div { font-size: 13px; opacity: 0.95; }
@@ -145,7 +147,7 @@ a { color: inherit; }
 
   <div class="prof-panel" id="prof-cho">
     <div class="prof-layout">
-      <div class="prof-avatar">조</div>
+      <img class="prof-photo" src="img/prof-cho.png" alt="조경필 교수">
       <div class="prof-info">
         <div class="prof-name-line">차근차근 시작해서 합격까지 이끄는<br>전기기사 조경필 교수님</div>
         <div class="prof-points">
@@ -165,7 +167,7 @@ a { color: inherit; }
 
   <div class="prof-panel" id="prof-kim">
     <div class="prof-layout">
-      <div class="prof-avatar">김</div>
+      <img class="prof-photo" src="img/prof-kim.png" alt="김상훈 교수">
       <div class="prof-info">
         <div class="prof-name-line">전기자격증+공기업 합격 전문가<br>전기×공기업 김상훈 교수님</div>
         <div class="prof-points">
@@ -185,7 +187,7 @@ a { color: inherit; }
 
   <div class="prof-panel" id="prof-lee">
     <div class="prof-layout">
-      <div class="prof-avatar">이</div>
+      <img class="prof-photo" src="img/prof-lee.png" alt="이종오 교수">
       <div class="prof-info">
         <div class="prof-name-line">단숨에 합격 도달! 쌍기사 합격메이커<br>소방설비기사 이종오 교수님</div>
         <div class="prof-points">
