@@ -39,6 +39,39 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "시크릿코드는 어떻게 사용하나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "수강신청 시 시크릿코드를 입력하시면 파트너스 특별할인이 적용됩니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "CBT 모의고사는 무엇인가요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "실제 시험과 동일한 환경에서 무한 기출·랜덤 풀이훈련이 가능한 서비스로, 누적 응시자 5만명을 달성했습니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "학습 중 궁금한 점은 어떻게 질문하나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "유료 수강생을 대상으로 교수님 1:1 온라인 학습 질문 서비스를 제공합니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "여러 자격증을 한 번에 준비할 수 있나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "네, 전기+기계 쌍기사 패스, 전기(4종)+공기업 올패스 등 복수 자격증을 함께 준비할 수 있는 상품을 제공합니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "합격률과 만족도는 어떻게 되나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "기사 자격증 최종합격률 92%, 강사·강의·교재만족도 98%, 체감적중률 99%를 기록하고 있습니다." }
+    }
+  ]
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <style>
@@ -148,6 +181,8 @@ a { color: inherit; }
   font-size: 13.5px; font-weight: 700; cursor: pointer; font-family: 'Noto Sans KR', sans-serif; white-space: nowrap;
 }
 .coupon-hint { font-size: 11.5px; opacity: 0.75; margin-top: 10px; }
+.coupon-hint strong { color: #0A0A0A; background: #fff; padding: 1px 6px; border-radius: 4px; }
+.coupon-result { font-size: 12.5px; font-weight: 700; margin-top: 10px; min-height: 16px; text-align: left; }
 
 .support-section { background: #0A0A0A; padding: 64px 32px; }
 .support-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #262626; max-width: 1100px; margin: 36px auto 0; border: 1px solid #262626; border-radius: 14px; overflow: hidden; }
@@ -189,6 +224,26 @@ a { color: inherit; }
 .pass-btn { display: block; text-align: center; margin-top: 14px; background: #1a1a1a; color: #fff; border: none; padding: 10px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; font-family: 'Noto Sans KR', sans-serif; }
 @media (max-width: 800px) { .pass-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .pass-grid { grid-template-columns: 1fr; } }
+
+.reason-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 24px; }
+.reason-card { background: #0A0A0A; border: 1px solid #2a2a2a; border-radius: 14px; padding: 26px 18px; text-align: center; }
+.reason-num { font-size: 22px; font-weight: 800; color: #F0D375; margin-bottom: 8px; }
+.reason-title { font-size: 14.5px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.reason-text { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.7; }
+@media (max-width: 800px) { .reason-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.audience-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.audience-item { background: #fff; border: 1px solid #E5E5E5; border-radius: 12px; padding: 18px 20px; font-size: 13.5px; color: #333; font-weight: 500; display: flex; align-items: center; gap: 10px; }
+.audience-item i { color: #FF2E93; font-size: 18px; flex-shrink: 0; }
+@media (max-width: 700px) { .audience-list { grid-template-columns: 1fr; } }
+
+.faq-list { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; }
+.faq-item { background: #fff; border: 1px solid #E5E5E5; border-radius: 10px; padding: 16px 20px; }
+.faq-item summary { font-size: 14px; font-weight: 700; color: #1a1a1a; cursor: pointer; list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; float: right; font-weight: 400; color: #999; }
+.faq-item[open] summary::after { content: '\2212'; }
+.faq-item p { margin-top: 10px; font-size: 13px; color: #555; line-height: 1.8; }
 
 .cta-section { background: #FFF3E0; padding: 56px 32px; text-align: center; }
 .cta-section h2 { font-size: 22px; font-weight: 800; color: #1a1a1a; margin-bottom: 10px; }
@@ -306,9 +361,10 @@ a { color: inherit; }
     <label for="secretCode">시크릿코드 입력</label>
     <div class="coupon-input-row">
       <input type="text" id="secretCode" class="coupon-input" placeholder="코드를 입력해주세요">
-      <button type="button" class="coupon-btn" onclick="alert('상담 신청 시 담당자가 쿠폰 적용을 도와드립니다.')">쿠폰 확인</button>
+      <button type="button" class="coupon-btn" onclick="checkCoupon()">쿠폰 확인</button>
     </div>
-    <div class="coupon-hint">인강·학원 수강 특별할인 쿠폰이 적용됩니다</div>
+    <div class="coupon-result" id="couponResult"></div>
+    <div class="coupon-hint">파트너스 전용 코드 <strong>E4941</strong>을 입력하면 인강·학원 수강 특별할인이 적용됩니다</div>
   </div>
 </section>
 
@@ -514,6 +570,74 @@ a { color: inherit; }
   </div>
 </section>
 
+<section class="support-section">
+  <div class="section-head">
+    <h2 class="section-title on-dark">엔지니어랩을 선택하는 이유</h2>
+  </div>
+  <div class="reason-grid">
+    <div class="reason-card">
+      <div class="reason-num">92%</div>
+      <div class="reason-title">업계 수준의 합격률</div>
+      <div class="reason-text">최종합격률 92%를 기록한 검증된 커리큘럼으로 준비할 수 있습니다.</div>
+    </div>
+    <div class="reason-card">
+      <div class="reason-num">1위</div>
+      <div class="reason-title">검증된 합격 후기</div>
+      <div class="reason-text">리얼합격수기 작성건수 1위, 실제 합격자들의 생생한 후기를 확인할 수 있습니다.</div>
+    </div>
+    <div class="reason-card">
+      <div class="reason-num">99%</div>
+      <div class="reason-title">높은 교재 적중률</div>
+      <div class="reason-text">체감적중률 99%의 교재와 강의로 시험 범위를 효율적으로 대비합니다.</div>
+    </div>
+    <div class="reason-card">
+      <div class="reason-num">올인원</div>
+      <div class="reason-title">인강+학원+교재</div>
+      <div class="reason-text">강사·강의·교재만족도 98%, 온라인과 오프라인을 함께 지원합니다.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2 class="section-title">이런 분께 추천합니다</h2>
+  </div>
+  <div class="audience-list">
+    <div class="audience-item"><i class="ti ti-check"></i> 전기기사·전기산업기사를 처음 준비하는 수험생</div>
+    <div class="audience-item"><i class="ti ti-check"></i> 짧은 기간 안에 합격을 목표로 하는 수험생</div>
+    <div class="audience-item"><i class="ti ti-check"></i> 자격증 취득 후 공기업 취업까지 준비하는 수험생</div>
+    <div class="audience-item"><i class="ti ti-check"></i> 소방설비기사 전기·기계분야를 함께 준비하는 수험생</div>
+  </div>
+</section>
+
+<section class="section" style="max-width:800px;">
+  <div class="section-head">
+    <h2 class="section-title">자주 묻는 질문</h2>
+  </div>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>시크릿코드는 어떻게 사용하나요?</summary>
+      <p>수강신청 시 시크릿코드를 입력하시면 파트너스 특별할인이 적용됩니다.</p>
+    </details>
+    <details class="faq-item">
+      <summary>CBT 모의고사는 무엇인가요?</summary>
+      <p>실제 시험과 동일한 환경에서 무한 기출·랜덤 풀이훈련이 가능한 서비스로, 누적 응시자 5만명을 달성했습니다.</p>
+    </details>
+    <details class="faq-item">
+      <summary>학습 중 궁금한 점은 어떻게 질문하나요?</summary>
+      <p>유료 수강생을 대상으로 교수님 1:1 온라인 학습 질문 서비스를 제공합니다.</p>
+    </details>
+    <details class="faq-item">
+      <summary>여러 자격증을 한 번에 준비할 수 있나요?</summary>
+      <p>네, 전기+기계 쌍기사 패스, 전기(4종)+공기업 올패스 등 복수 자격증을 함께 준비할 수 있는 상품을 제공합니다.</p>
+    </details>
+    <details class="faq-item">
+      <summary>합격률과 만족도는 어떻게 되나요?</summary>
+      <p>기사 자격증 최종합격률 92%, 강사·강의·교재만족도 98%, 체감적중률 99%를 기록하고 있습니다.</p>
+    </details>
+  </div>
+</section>
+
 <section class="cta-section" id="consult">
   <h2>지금 상담받고 맞춤 패스를 추천받으세요</h2>
   <p>준비 중인 자격증과 현재 상황을 말씀해주시면 가장 적합한 커리큘럼을 안내해드립니다.</p>
@@ -553,6 +677,21 @@ a { color: inherit; }
     document.getElementById('prof-' + key).classList.add('active');
     document.querySelectorAll('.pass-panel').forEach(function(p) { p.style.display = 'none'; });
     document.getElementById('pass-' + key).style.display = 'block';
+  }
+
+  function checkCoupon() {
+    var input = document.getElementById('secretCode').value.trim().toUpperCase();
+    var resultEl = document.getElementById('couponResult');
+    if (!input) {
+      resultEl.textContent = '코드를 입력해주세요.';
+      resultEl.style.color = '#fff';
+    } else if (input === 'E4941') {
+      resultEl.textContent = '✓ 코드 확인 완료! 수강신청 시 이 코드를 입력하시면 할인이 적용됩니다.';
+      resultEl.style.color = '#0A0A0A';
+    } else {
+      resultEl.textContent = '등록되지 않은 코드입니다. 코드를 다시 확인해주세요.';
+      resultEl.style.color = '#fff';
+    }
   }
 </script>
 </body>
