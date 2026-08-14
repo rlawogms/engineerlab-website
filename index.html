@@ -198,6 +198,11 @@ a { color: inherit; }
   font-size: 13.5px; font-weight: 700; cursor: pointer; font-family: 'Noto Sans KR', sans-serif; white-space: nowrap;
 }
 .coupon-hint { font-size: 11.5px; opacity: 0.75; margin-top: 10px; }
+.coupon-go-btn {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  background: #0A0A0A; color: #F0D375; border: none; padding: 13px; border-radius: 8px;
+  font-size: 14px; font-weight: 700; text-decoration: none; margin-top: 10px;
+}
 .coupon-result { font-size: 12.5px; font-weight: 700; margin-top: 10px; min-height: 16px; text-align: left; }
 .coupon-code-display { background: #fff; border: 3px dashed #0A0A0A; border-radius: 12px; padding: 18px; margin-bottom: 20px; text-align: center; }
 .coupon-code-label { display: block; font-size: 12.5px; font-weight: 700; color: #888; margin-bottom: 8px; letter-spacing: 0.06em; }
@@ -347,6 +352,7 @@ a { color: inherit; }
       <button type="button" class="coupon-btn" onclick="checkCoupon()">쿠폰 확인</button>
     </div>
     <div class="coupon-result" id="couponResult"></div>
+    <a href="https://www.engineerlab.co.kr/ee/promotion/2025/partner/index.php?partnerID=e4941" target="_blank" rel="noopener" class="coupon-go-btn" id="couponGoBtn" style="display:none;"><i class="ti ti-gift"></i> 할인 페이지로 이동하기</a>
     <div class="coupon-hint">위 코드를 입력하면 인강·학원 수강 특별할인이 적용됩니다</div>
   </div>
 </section>
@@ -481,15 +487,19 @@ a { color: inherit; }
   function checkCoupon() {
     var input = document.getElementById('secretCode').value.trim().toUpperCase();
     var resultEl = document.getElementById('couponResult');
+    var goBtn = document.getElementById('couponGoBtn');
     if (!input) {
       resultEl.textContent = '코드를 입력해주세요.';
       resultEl.style.color = '#fff';
+      goBtn.style.display = 'none';
     } else if (input === 'E4941') {
-      resultEl.textContent = '✓ 코드 확인 완료! 수강신청 시 이 코드를 입력하시면 할인이 적용됩니다.';
+      resultEl.textContent = '✓ 코드 확인 완료! 아래 버튼으로 할인 페이지에서 혜택을 받으세요.';
       resultEl.style.color = '#0A0A0A';
+      goBtn.style.display = 'flex';
     } else {
       resultEl.textContent = '등록되지 않은 코드입니다. 코드를 다시 확인해주세요.';
       resultEl.style.color = '#fff';
+      goBtn.style.display = 'none';
     }
   }
 </script>
