@@ -90,6 +90,9 @@ a { color: inherit; }
 
 .tag-grid-head { display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 800; color: #1a1a1a; margin-bottom: 20px; }
 .tag-grid-head i { color: #FF2E93; font-size: 20px; }
+.tag-group { margin-bottom: 24px; }
+.tag-group:last-child { margin-bottom: 0; }
+.tag-group-title { font-size: 13px; font-weight: 700; color: #FF2E93; margin-bottom: 10px; padding-left: 2px; }
 .tag-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .tag-pill {
   display: flex; align-items: center; gap: 6px; background: #F5F5F5; border: 1px solid #E5E5E5;
@@ -258,39 +261,54 @@ a { color: inherit; }
 
 <section class="page-section" style="padding-top:0;">
   <div class="tag-grid-head"><i class="ti ti-books"></i> 자격증 종류 및 안내</div>
-  <div class="tag-grid">
-    <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 전기기사</a>
-    <a href="https://www.q-net.or.kr" target="_blank" rel="noopener" class="tag-pill"><i class="ti ti-bolt"></i> 기사 시험일정</a>
-    <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 전기기능사</a>
-    <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 전기산업기사</a>
-    <a href="pricing.html" class="tag-pill"><i class="ti ti-bolt"></i> 전기기사필기</a>
-    <a href="pricing.html" class="tag-pill"><i class="ti ti-bolt"></i> 전기기사실기</a>
-    <a href="support.html#certguide" class="tag-pill"><i class="ti ti-bolt"></i> 전기기사난이도</a>
-    <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 전기공사기사</a>
-    <a href="support.html#certguide" class="tag-pill"><i class="ti ti-bolt"></i> 전기기사자격증</a>
-    <a href="pricing.html" class="tag-pill"><i class="ti ti-bolt"></i> 전기기사인강</a>
-    <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 전기기능사필기</a>
-    <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 전기기능사실기</a>
-    <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 소방설비기사</a>
-    <a href="support.html#certguide" class="tag-pill"><i class="ti ti-bolt"></i> 소방설비기사전기</a>
-    <a href="pricing.html" class="tag-pill"><i class="ti ti-bolt"></i> 소방설비기사실기</a>
-    <a href="support.html#certguide" class="tag-pill"><i class="ti ti-bolt"></i> 소방설비기사기계</a>
-    <a href="index.html" class="tag-pill"><i class="ti ti-bolt"></i> 소방설비기사학원</a>
-    <a href="index.html" class="tag-pill"><i class="ti ti-bolt"></i> 엔지니어랩</a>
-    <a href="teachers.html" class="tag-pill"><i class="ti ti-bolt"></i> 전기기사인강추천</a>
-    <a href="support.html#materials" class="tag-pill"><i class="ti ti-bolt"></i> 기출문제집</a>
-    <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 공기업채용</a>
-    <a href="teachers.html" class="tag-pill"><i class="ti ti-bolt"></i> 한전면접</a>
-    <a href="index.html" class="tag-pill"><i class="ti ti-bolt"></i> 전기학원</a>
-    <a href="support.html#gov" class="tag-pill"><i class="ti ti-bolt"></i> 국비자격증</a>
-    <a href="teachers.html" class="tag-pill"><i class="ti ti-bolt"></i> 코레일면접</a>
-    <a href="support.html#gov" class="tag-pill"><i class="ti ti-bolt"></i> 국비학원</a>
-    <a href="support.html#certguide" class="tag-pill"><i class="ti ti-bolt"></i> 소방 응시자격</a>
-    <a href="pricing.html" class="tag-pill"><i class="ti ti-bolt"></i> 전기산업기사실기</a>
-    <a href="pricing.html" class="tag-pill"><i class="ti ti-bolt"></i> 전기산업기사필기</a>
-    <a href="support.html#certguide" class="tag-pill"><i class="ti ti-bolt"></i> 소방전기기사</a>
-    <a href="pricing.html" class="tag-pill"><i class="ti ti-bolt"></i> 소방전기실기</a>
-    <a href="support.html#materials" class="tag-pill"><i class="ti ti-bolt"></i> 소방 기출문제</a>
+
+  <div class="tag-group">
+    <div class="tag-group-title">전기기사</div>
+    <div class="tag-grid">
+      <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 전기기사</a>
+      <a href="pricing.html" class="tag-pill"><i class="ti ti-bolt"></i> 전기기사필기</a>
+      <a href="pricing.html" class="tag-pill"><i class="ti ti-bolt"></i> 전기기사실기</a>
+      <a href="support.html#certguide" class="tag-pill"><i class="ti ti-bolt"></i> 전기기사난이도</a>
+    </div>
+  </div>
+
+  <div class="tag-group">
+    <div class="tag-group-title">전기산업기사·기능사·공사기사</div>
+    <div class="tag-grid">
+      <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 전기산업기사</a>
+      <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 전기기능사</a>
+      <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 전기공사기사</a>
+    </div>
+  </div>
+
+  <div class="tag-group">
+    <div class="tag-group-title">소방설비기사</div>
+    <div class="tag-grid">
+      <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 소방설비기사</a>
+      <a href="support.html#certguide" class="tag-pill"><i class="ti ti-bolt"></i> 소방설비기사전기</a>
+      <a href="support.html#certguide" class="tag-pill"><i class="ti ti-bolt"></i> 소방설비기사기계</a>
+      <a href="pricing.html" class="tag-pill"><i class="ti ti-bolt"></i> 소방설비기사실기</a>
+      <a href="support.html#certguide" class="tag-pill"><i class="ti ti-bolt"></i> 소방 응시자격</a>
+    </div>
+  </div>
+
+  <div class="tag-group">
+    <div class="tag-group-title">공기업 취업</div>
+    <div class="tag-grid">
+      <a href="support.html#curriculum" class="tag-pill"><i class="ti ti-bolt"></i> 공기업채용</a>
+      <a href="teachers.html" class="tag-pill"><i class="ti ti-bolt"></i> 한전면접</a>
+      <a href="teachers.html" class="tag-pill"><i class="ti ti-bolt"></i> 코레일면접</a>
+    </div>
+  </div>
+
+  <div class="tag-group">
+    <div class="tag-group-title">국비지원 · 학습자료</div>
+    <div class="tag-grid">
+      <a href="support.html#gov" class="tag-pill"><i class="ti ti-bolt"></i> 국비지원</a>
+      <a href="support.html#gov" class="tag-pill"><i class="ti ti-bolt"></i> 국비자격증</a>
+      <a href="support.html#materials" class="tag-pill"><i class="ti ti-bolt"></i> 기출문제집</a>
+      <a href="https://www.q-net.or.kr" target="_blank" rel="noopener" class="tag-pill"><i class="ti ti-bolt"></i> 기사 시험일정</a>
+    </div>
   </div>
 </section>
 
