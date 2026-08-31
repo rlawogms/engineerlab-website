@@ -94,6 +94,9 @@ a { color: inherit; }
 .lecture-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .lecture-card { background: #141414; border: 1px solid #2a2a2a; border-radius: 14px; padding: 24px 22px; position: relative; }
 .lecture-discount { position: absolute; top: -8px; left: 18px; background: #FF2E93; color: #fff; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 6px; }
+.lecture-closed-badge { position: absolute; top: -8px; right: 18px; background: #333; color: #F0D375; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid #D4AF37; }
+.lecture-card.closed { opacity: 0.75; }
+.lecture-btn.closed-btn { background: #333; color: #F0D375; }
 .lecture-cert { display: inline-block; background: rgba(212,175,55,0.12); color: #D4AF37; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px; margin: 10px 0; }
 .lecture-name { font-size: 15.5px; font-weight: 700; color: #fff; line-height: 1.5; margin-bottom: 10px; min-height: 46px; }
 .lecture-period { font-size: 12px; color: rgba(255,255,255,0.5); margin-bottom: 14px; }
@@ -197,23 +200,25 @@ a { color: inherit; }
       <div class="lecture-price">299,000원</div>
       <a href="https://www.engineerlab.co.kr/acad/lecture/lecture.php" target="_blank" rel="noopener" class="lecture-btn">수강신청</a>
     </div>
-    <div class="lecture-card">
+    <div class="lecture-card closed">
       <div class="lecture-discount">8% 할인</div>
+      <div class="lecture-closed-badge">마감</div>
       <div class="lecture-cert">소방설비기사(전기)</div>
       <div class="lecture-name">소방설비기사 필기 긴급 특강 119(전기)</div>
       <div class="lecture-period"><i class="ti ti-calendar"></i> 1/19 ~ 1/30</div>
       <div class="lecture-orig">정가 162,000원</div>
       <div class="lecture-price">149,000원</div>
-      <a href="https://www.engineerlab.co.kr/acad/lecture/lecture.php" target="_blank" rel="noopener" class="lecture-btn">수강신청</a>
+      <a href="https://www.engineerlab.co.kr/acad/lecture/lecture.php" target="_blank" rel="noopener" class="lecture-btn closed-btn">문의하기</a>
     </div>
-    <div class="lecture-card">
+    <div class="lecture-card closed">
       <div class="lecture-discount">30% 할인</div>
+      <div class="lecture-closed-badge">마감</div>
       <div class="lecture-cert">전기기사 · 공기업 · 김상훈 교수</div>
       <div class="lecture-name">[김상훈] 공기업 취업 원패스</div>
       <div class="lecture-period"><i class="ti ti-calendar"></i> 1/5 ~ 5/5</div>
       <div class="lecture-orig">정가 1,644,000원</div>
       <div class="lecture-price">1,150,800원</div>
-      <a href="https://www.engineerlab.co.kr/acad/lecture/lecture.php" target="_blank" rel="noopener" class="lecture-btn">수강신청</a>
+      <a href="https://www.engineerlab.co.kr/acad/lecture/lecture.php" target="_blank" rel="noopener" class="lecture-btn closed-btn">문의하기</a>
     </div>
   </div>
 
