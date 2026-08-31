@@ -95,6 +95,7 @@ a { color: inherit; }
 }
 .navbar-brand { display: flex; align-items: center; gap: 8px; font-weight: 800; color: #D4AF37; font-size: 18px; text-decoration: none; white-space: nowrap; flex-shrink: 0; letter-spacing: -0.02em; }
 .navbar-brand img { width: 28px; height: 28px; }
+.navbar-brand-sub { font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.45); letter-spacing: 0; margin-left: 2px; }
 .navbar-links { display: flex; align-items: center; gap: 22px; overflow-x: auto; flex: 1; min-width: 0; scrollbar-width: none; -ms-overflow-style: none; margin-left: 20px; }
 .navbar-links::-webkit-scrollbar { display: none; }
 .navbar-links a { color: #ccc; font-size: 14px; font-weight: 500; text-decoration: none; white-space: nowrap; flex-shrink: 0; padding-bottom: 4px; border-bottom: 2px solid transparent; }
@@ -280,12 +281,13 @@ a { color: inherit; }
 <body>
 
 <nav class="navbar">
-  <a href="index.html" class="navbar-brand"><img src="favicon.svg" alt="엔지니어랩"><span>엔지니어랩</span></a>
+  <a href="index.html" class="navbar-brand"><img src="favicon.svg" alt="엔지니어랩"><span>엔지니어랩 <span class="navbar-brand-sub">종로학원</span></span></a>
   <div class="navbar-links">
     <a href="index.html" class="active">홈</a>
     <a href="teachers.html">강사진</a>
     <a href="support.html">학습지원</a>
     <a href="pricing.html">수강신청</a>
+    <a href="discount.html">할인코드</a>
     <a href="reviews.html">합격 후기</a>
   </div>
   <a href="https://www.engineerlab.co.kr/ee/promotion/2025/partner/index.php?partnerID=e4941" target="_blank" rel="noopener" class="navbar-cta">할인 받기</a>
