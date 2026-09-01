@@ -119,6 +119,9 @@ a { color: inherit; }
 .gov-box p:last-of-type { margin-bottom: 20px; }
 .gov-note { font-size: 11.5px; opacity: 0.8; margin-top: 4px; }
 .gov-btn { display: inline-flex; align-items: center; gap: 6px; background: #0A0A0A; color: #F0D375; padding: 12px 22px; border-radius: 8px; font-size: 13.5px; font-weight: 700; text-decoration: none; }
+.gov-btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
+.gov-btn-outline { display: inline-flex; align-items: center; gap: 6px; background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.6); padding: 12px 22px; border-radius: 8px; font-size: 13.5px; font-weight: 700; text-decoration: none; }
+.gov-btn-outline:hover { background: rgba(255,255,255,0.12); }
 
 .cert-list { display: flex; flex-direction: column; gap: 14px; }
 .cert-item { background: #F5F5F5; border: 1px solid #E5E5E5; border-radius: 12px; padding: 20px 22px; }
@@ -271,7 +274,10 @@ a { color: inherit; }
     <h3>국비지원 안내</h3>
     <p>국민내일배움카드 등 정부 지원 제도를 통해 훈련비 일부를 지원받을 수 있습니다.</p>
     <p>지원 대상과 지원 비율은 고용보험 가입 이력, 재직·구직 상태 등 개인 자격 요건에 따라 다르게 적용되므로, 본인의 정확한 지원 가능 여부와 지원 금액은 상담을 통해 확인하시길 권장드립니다.</p>
-    <a href="https://www.engineerlab.co.kr/acad/lecture/grant.php" target="_blank" rel="noopener" class="gov-btn"><i class="ti ti-info-circle"></i> 국비지원 수강신청하기</a>
+    <div class="gov-btn-group">
+      <a href="https://www.engineerlab.co.kr/acad/lecture/grant.php" target="_blank" rel="noopener" class="gov-btn"><i class="ti ti-info-circle"></i> 국비지원 수강신청하기</a>
+      <a href="https://www.engineerlab.co.kr/ee/promotion/2025/partner/index.php?partnerID=e4941" target="_blank" rel="noopener" class="gov-btn-outline"><i class="ti ti-ticket"></i> 할인코드 받기</a>
+    </div>
   </div>
 </section>
 
