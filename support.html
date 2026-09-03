@@ -113,6 +113,14 @@ a { color: inherit; }
 @media (max-width: 800px) { .curr-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .curr-grid { grid-template-columns: 1fr; } }
 
+.step-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; position: relative; }
+.step-card { background: #F5F5F5; border: 1px solid #E5E5E5; border-radius: 12px; padding: 24px 18px; text-align: center; }
+.step-num { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin: 0 auto 12px; border-radius: 50%; background: #0A0A0A; color: #D4AF37; font-size: 14px; font-weight: 800; }
+.step-title { font-size: 15px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+.step-text { font-size: 12.5px; color: #666; line-height: 1.7; }
+@media (max-width: 800px) { .step-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .step-grid { grid-template-columns: 1fr; } }
+
 .gov-box { background: linear-gradient(135deg, #FF7A3D, #FF2E93); border-radius: 16px; padding: 32px 28px; color: #fff; }
 .gov-box h3 { font-size: 18px; font-weight: 800; margin-bottom: 12px; }
 .gov-box p { font-size: 13.5px; line-height: 1.9; margin-bottom: 10px; opacity: 0.95; }
@@ -230,7 +238,36 @@ a { color: inherit; }
   </div>
 </section>
 
-<section class="page-section" id="curriculum">
+<section class="page-section" id="steps">
+  <div class="page-section-head">
+    <h2 class="page-section-title">학습은 이렇게 진행됩니다</h2>
+    <p class="page-section-sub">입문부터 실기까지, 단계별로 필요한 학습을 순서대로 채워나갑니다</p>
+  </div>
+  <div class="step-grid">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-title">입문</div>
+      <div class="step-text">시험 과목 구성과 기본 용어, 계산에 필요한 기초 개념부터 잡아갑니다.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div class="step-title">이론</div>
+      <div class="step-text">과목별 핵심 개념을 체계적으로 정리하며 이해도를 쌓아갑니다.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-title">기출</div>
+      <div class="step-text">CBT 모의고사로 반복 출제되는 유형을 실전처럼 분석하고 풀이합니다.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <div class="step-title">실기</div>
+      <div class="step-text">계산 과정과 답안 서술, 도면·설비 이해까지 실기 대비를 완성합니다.</div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section" id="curriculum" style="padding-top:0;">
   <div class="page-section-head">
     <h2 class="page-section-title">교육과정 안내</h2>
     <p class="page-section-sub">전기·소방 국가기술자격증부터 공기업 채용까지, 필요한 과정을 선택해 준비할 수 있습니다</p>
