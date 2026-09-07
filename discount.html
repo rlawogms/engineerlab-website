@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>파트너스 할인·시크릿코드 확인 - 엔지니어랩 종로학원</title>
-<meta name="description" content="파트너스 시크릿코드(E4941)를 입력해 할인 혜택을 확인하고, 일반 수강신청·국비지원 수강신청·학원 메인 페이지 중 원하는 방식으로 바로 이동하세요." />
+<meta name="description" content="파트너스 시크릿코드(E4941)로 4만원+2만원, 총 6만원 할인을 받아보세요. 신규·기존 회원별 이용 방법과 적용 가능한 과정을 확인하고 원하는 수강 방식으로 바로 이동하세요." />
 <meta name="keywords" content="엔지니어랩 시크릿코드, 엔지니어랩 할인코드, 엔지니어랩 코드번호, 엔지니어랩 종로학원, 엔지니어랩 국비지원, 엔지니어랩 일반수강신청" />
 <link rel="canonical" href="https://engineerlab-website.co.kr/discount.html" />
 <meta property="og:type" content="website" />
@@ -98,7 +98,20 @@ a { color: inherit; }
 .coupon-code-display { background: #fff; border: 3px dashed #0A0A0A; border-radius: 12px; padding: 18px; margin-bottom: 20px; text-align: center; }
 .coupon-code-label { display: block; font-size: 12.5px; font-weight: 700; color: #888; margin-bottom: 8px; letter-spacing: 0.06em; }
 .coupon-code-big { display: block; font-size: 40px; font-weight: 800; color: #0A0A0A; letter-spacing: 0.1em; line-height: 1.2; }
+.coupon-code-amount { display: inline-block; margin-top: 10px; background: #0A0A0A; color: #F0D375; font-size: 13px; font-weight: 800; padding: 5px 14px; border-radius: 20px; }
 @media (max-width: 480px) { .coupon-code-big { font-size: 30px; } }
+
+.howto-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 780px; margin: 28px auto 0; text-align: left; }
+.howto-card { background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.35); border-radius: 14px; padding: 20px 22px; }
+.howto-card-title { font-size: 14px; font-weight: 800; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+.howto-card-text { font-size: 13px; line-height: 1.8; opacity: 0.92; }
+@media (max-width: 700px) { .howto-grid { grid-template-columns: 1fr; } }
+
+.coupon-notes { max-width: 780px; margin: 24px auto 0; background: rgba(0,0,0,0.18); border-radius: 12px; padding: 18px 22px; text-align: left; }
+.coupon-notes-title { font-size: 13px; font-weight: 800; margin-bottom: 10px; }
+.coupon-notes ul { list-style: none; padding: 0; margin: 0; }
+.coupon-notes li { font-size: 12.5px; line-height: 1.85; opacity: 0.9; padding-left: 14px; position: relative; }
+.coupon-notes li::before { content: '·'; position: absolute; left: 0; font-weight: 800; }
 
 .section { padding: 48px 32px 64px; max-width: 1100px; margin: 0 auto; background: #0A0A0A; }
 .section-eyebrow { color: #D4AF37; font-size: 13px; font-weight: 700; text-align: center; margin-bottom: 8px; }
@@ -160,7 +173,6 @@ a { color: inherit; }
   <div class="navbar-links">
     <a href="index.html">홈</a>
     <a href="teachers.html">강사진</a>
-    <a href="jongno.html">종로학원</a>
     <a href="support.html">학습지원</a>
     <a href="pricing.html">수강신청</a>
     <a href="discount.html" class="active">할인코드</a>
@@ -185,6 +197,7 @@ a { color: inherit; }
     <div class="coupon-code-display">
       <span class="coupon-code-label">파트너스 시크릿코드</span>
       <span class="coupon-code-big">E4941</span>
+      <span class="coupon-code-amount">4만원+2만원, 총 6만원 할인</span>
     </div>
     <label for="secretCode">시크릿코드 입력</label>
     <div class="coupon-input-row">
@@ -194,6 +207,26 @@ a { color: inherit; }
     <div class="coupon-result" id="couponResult"></div>
     <a href="https://www.engineerlab.co.kr/ee/promotion/2025/partner/index.php?partnerID=e4941" target="_blank" rel="noopener" class="coupon-go-btn" id="couponGoBtn" style="display:none;"><i class="ti ti-gift"></i> 할인 페이지로 이동하기</a>
     <div class="coupon-hint">위 시크릿코드(할인 코드번호)를 입력하면 인강·학원 수강 특별할인이 적용됩니다</div>
+  </div>
+
+  <div class="howto-grid">
+    <div class="howto-card">
+      <div class="howto-card-title"><i class="ti ti-user-plus"></i> 신규 회원이라면</div>
+      <div class="howto-card-text">할인 페이지에서 회원가입을 진행하면 시크릿코드를 입력한 것과 동일하게 쿠폰이 자동으로 발급됩니다.</div>
+    </div>
+    <div class="howto-card">
+      <div class="howto-card-title"><i class="ti ti-user-check"></i> 기존 회원이라면</div>
+      <div class="howto-card-text">할인 페이지에 로그인한 뒤 쿠폰 즉시받기 버튼을 클릭하면 동일한 혜택을 받으실 수 있습니다.</div>
+    </div>
+  </div>
+
+  <div class="coupon-notes">
+    <div class="coupon-notes-title"><i class="ti ti-info-circle"></i> 이용 전 확인해주세요</div>
+    <ul>
+      <li>쿠폰은 발급일로부터 30일간 유효하며, 상품 1건에 한해 적용됩니다.</li>
+      <li>전기기사·전기산업기사·전기공사기사·공기업 종합반 및 필기 패키지에 적용되며, 교재는 별도 구매입니다.</li>
+      <li>쿠폰이 발급되었더라도 선택한 과정이 적용 대상이 아니면 결제 시 할인이 반영되지 않을 수 있으니, 결제 전 할인 적용 여부를 꼭 확인해주세요.</li>
+    </ul>
   </div>
 </section>
 
