@@ -125,6 +125,10 @@ a { color: inherit; }
 }
 .prof-tab:hover { background: linear-gradient(135deg, #FF7A3D, #FF2E93); color: #fff; border-color: transparent; }
 .prof-tab-label { display: block; font-size: 10.5px; opacity: 0.75; margin-bottom: 2px; font-weight: 500; }
+@media (max-width: 680px) {
+  .prof-tabs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .prof-tab { text-align: center; padding: 10px 8px; }
+}
 
 .prof-panel { background: linear-gradient(135deg, #FF7A3D, #FF2E93); border-radius: 14px; padding: 36px 32px; color: #fff; scroll-margin-top: 80px; }
 .prof-panel + .prof-panel { margin-top: 20px; }
