@@ -174,6 +174,15 @@ a { color: inherit; }
 }
 .top-btn.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
 
+.shot-steps { max-width: 760px; margin: 0 auto; }
+.shot-step { display: flex; gap: 18px; background: #141414; border: 1px solid #2a2a2a; border-radius: 14px; padding: 22px; margin-bottom: 16px; align-items: flex-start; }
+.shot-step-num { flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: rgba(212,175,55,0.14); border: 1px solid #D4AF37; color: #D4AF37; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px; }
+.shot-step-body { min-width: 0; }
+.shot-step-body h3 { color: #fff; font-size: 15.5px; font-weight: 800; margin-bottom: 8px; }
+.shot-step-body p { color: rgba(255,255,255,0.65); font-size: 13.5px; line-height: 1.8; margin-bottom: 10px; }
+.shot-step-body img { width: 100%; max-width: 340px; border-radius: 10px; border: 1px solid #2a2a2a; display: block; }
+.shot-step-caption { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 6px; }
+
 @media (max-width: 680px) {
   .section { padding: 32px 20px 48px; }
 }
@@ -245,6 +254,63 @@ a { color: inherit; }
     </ul>
     <img src="coupon-applied.png" alt="코드 입력 이후 결제창에 나오는 쿠폰 적용 실제 이미지" style="width:100%;max-width:360px;border-radius:10px;border:1px solid #EAEAEA;margin-top:14px;display:block;">
     <p style="font-size:15px;font-weight:800;color:#fff;margin-top:8px;">코드 입력 이후 결제창에 나오는 쿠폰 적용 실제 이미지</p>
+  </div>
+</section>
+
+<section class="section" id="signup-guide">
+  <div class="section-eyebrow">실제 화면으로 보는</div>
+  <div class="section-title">신규 회원 수강 신청 방법</div>
+  <div class="section-sub">회원가입부터 쿠폰 적용, 결제까지 한눈에 확인하세요</div>
+  <div class="shot-steps">
+    <div class="shot-step">
+      <div class="shot-step-num">1</div>
+      <div class="shot-step-body">
+        <h3>파트너스 할인 배너 확인</h3>
+        <p>파트너스 링크로 접속하면 4만원+2만원, 총 6만원 할인 혜택 배너를 확인할 수 있습니다.</p>
+        <img src="signup-step1-coupon-banner.png" alt="엔지니어랩 파트너스 할인 배너 실제 화면">
+      </div>
+    </div>
+    <div class="shot-step">
+      <div class="shot-step-num">2</div>
+      <div class="shot-step-body">
+        <h3>회원가입 진행</h3>
+        <p>파트너스 링크로 접속한 상태에서 회원가입을 진행하면 가입과 동시에 할인쿠폰이 지급됩니다.</p>
+        <img src="signup-step2-join.png" alt="엔지니어랩 회원가입 화면">
+      </div>
+    </div>
+    <div class="shot-step">
+      <div class="shot-step-num">3</div>
+      <div class="shot-step-body">
+        <h3>원하는 강의 선택</h3>
+        <p>원하는 과정의 상품 페이지에서 수강신청을 눌러 주문 화면으로 이동합니다.</p>
+        <img src="signup-step3-product.png" alt="엔지니어랩 강의 상품 선택 화면">
+        <div class="shot-step-caption">위의 사진은 예시 이미지입니다.</div>
+      </div>
+    </div>
+    <div class="shot-step">
+      <div class="shot-step-num">4</div>
+      <div class="shot-step-body">
+        <h3>주문서에서 쿠폰적용 확인</h3>
+        <p>주문서 작성 화면의 쿠폰적용란에 발급된 파트너스 할인권이 보이는지 확인합니다.</p>
+        <img src="signup-step4-order.png" alt="엔지니어랩 주문서 작성 쿠폰적용 화면">
+      </div>
+    </div>
+    <div class="shot-step">
+      <div class="shot-step-num">5</div>
+      <div class="shot-step-body">
+        <h3>할인권 선택</h3>
+        <p>쿠폰적용 목록에서 파트너스 4+2만원 할인권(E4941), 60,000원 할인을 선택합니다.</p>
+        <img src="signup-step5-coupon-select.png" alt="엔지니어랩 쿠폰 선택 화면">
+      </div>
+    </div>
+    <div class="shot-step">
+      <div class="shot-step-num">6</div>
+      <div class="shot-step-body">
+        <h3>최종 결제금액 확인 후 결제</h3>
+        <p>할인이 반영된 최종 결제금액을 확인한 뒤 결제를 진행합니다.</p>
+        <img src="signup-step6-final-price.png" alt="엔지니어랩 최종 결제금액 확인 화면">
+      </div>
+    </div>
   </div>
 </section>
 
