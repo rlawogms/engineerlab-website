@@ -51,6 +51,21 @@
       "@type": "Question",
       "name": "소방설비기사 실기가 어렵다는데, 이유가 무엇인가요?",
       "acceptedAnswer": { "@type": "Answer", "text": "지식이 부족해서라기보다, 계산 과정과 답안을 직접 작성해야 하는 서술형 방식이라 어디까지 써야 점수로 인정되는지 채점 기준을 스스로 판단하기 어려운 것이 실기 시험의 주된 어려움입니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "엔지니어랩 CBT 모의고사는 총 몇 문항인가요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "총 137회차/10,200문항 규모로 구성되어 있으며, 누적 응시 13만건+을 기록했습니다. 3회 이상 응시한 수강생은 평균 20점 이상 점수가 상승했습니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "복원 LIVE, 기획특강은 어떤 콘텐츠인가요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "매주 꼭나옴 시리즈, 기출 복원 등 다양한 콘텐츠를 제공하는 생방송 특강입니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "1:1 학습질문 서비스는 누구나 이용할 수 있나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "유료 수강생을 대상으로 교수님께 1:1 온라인으로 학습 질문을 할 수 있는 서비스입니다." }
     }
   ]
 }
@@ -109,6 +124,15 @@ a { color: inherit; }
 .page-section-head { text-align: center; margin-bottom: 32px; }
 .page-section-title { font-size: 24px; font-weight: 800; color: #1a1a1a; }
 .page-section-sub { font-size: 13.5px; color: #888; margin-top: 8px; }
+
+.sfaq-list { max-width: 700px; margin: 0 auto; }
+.sfaq-item { background: #F7F7F8; border: 1px solid #EAEAEA; border-radius: 10px; padding: 16px 20px; margin-bottom: 10px; }
+.sfaq-item summary { font-size: 15px; font-weight: 700; color: #1a1a1a; cursor: pointer; list-style: none; }
+.sfaq-item summary::-webkit-details-marker { display: none; }
+.sfaq-item summary::after { content: '+'; float: right; font-weight: 400; color: #999; }
+.sfaq-item[open] summary::after { content: '\2212'; }
+.sfaq-item p { margin-top: 10px; font-size: 13.5px; color: #555; line-height: 1.8; }
+.sfaq-item p strong { color: #1a1a1a; }
 
 .curr-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .curr-card { background: #F5F5F5; border: 1px solid #E5E5E5; border-radius: 12px; padding: 22px 20px; }
@@ -434,6 +458,27 @@ a { color: inherit; }
       <a href="support.html#materials" class="tag-pill"><i class="ti ti-bolt"></i> 기출문제집</a>
       <a href="https://www.q-net.or.kr" target="_blank" rel="noopener" class="tag-pill"><i class="ti ti-bolt"></i> 기사 시험일정</a>
     </div>
+  </div>
+</section>
+
+<section class="page-section" id="support-faq" style="padding-top:0;">
+  <div class="page-section-head">
+    <h2 class="page-section-title">학습지원 자주 묻는 질문</h2>
+    <p class="page-section-sub">CBT 모의고사, 복원 LIVE, 1:1 학습질문에 대해 자주 묻는 내용을 모았습니다</p>
+  </div>
+  <div class="sfaq-list">
+    <details class="sfaq-item" open>
+      <summary>엔지니어랩 CBT 모의고사는 총 몇 문항인가요?</summary>
+      <p>총 <strong>137회차/10,200문항</strong> 규모로 구성되어 있으며, 누적 응시 <strong>13만건+</strong>을 기록했습니다. 3회 이상 응시한 수강생은 평균 20점 이상 점수가 상승했습니다.</p>
+    </details>
+    <details class="sfaq-item">
+      <summary>복원 LIVE, 기획특강은 어떤 콘텐츠인가요?</summary>
+      <p>매주 꼭나옴 시리즈, 기출 복원 등 다양한 콘텐츠를 제공하는 생방송 특강입니다.</p>
+    </details>
+    <details class="sfaq-item">
+      <summary>1:1 학습질문 서비스는 누구나 이용할 수 있나요?</summary>
+      <p>유료 수강생을 대상으로 교수님께 1:1 온라인으로 학습 질문을 할 수 있는 서비스입니다.</p>
+    </details>
   </div>
 </section>
 
